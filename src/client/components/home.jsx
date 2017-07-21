@@ -23,11 +23,22 @@ import custom from "../styles/custom.css";
 import {ProductList} from "./productList";
 /**/
 
-export default () =>
-  <div className={custom.container}>
-    <div>
-      <ul role="nav">
-          <li><Link to="/products">Products List</Link></li>
-        </ul>
-    </div>
-  </div>;
+
+  export default class Home extends React.Component {
+	constructor(props) {
+    	super(props);
+    }
+
+	  render() {
+	  	return (
+	  	 <div className={custom.container}>
+		    <div>
+		      <ul role="nav">
+		          <li><Link to="/products">Products List</Link></li>
+		        </ul>
+		        {this.props.children}
+		    </div>
+		  </div>
+	  )}
+}
+
