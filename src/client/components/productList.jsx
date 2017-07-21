@@ -10,7 +10,11 @@ import {fetchProducts} from "../actions/index";
 
 class ProductList extends React.Component {
 	componentDidMount() {
-        this.props.fetchData();
+        if(typeof this.props.list != 'undefined' && this.props.list.length == 0){
+        	this.props.fetchData();
+        }else if(typeof this.props.list == 'undefined'){
+        	this.props.fetchData();
+        }
     }
 
   render() {
