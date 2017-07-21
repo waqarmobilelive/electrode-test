@@ -1,4 +1,3 @@
-
 export function fetchProducts (){
   return (dispatch) => {
     dispatch(productsAreLoading(true));

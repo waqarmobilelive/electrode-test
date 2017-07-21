@@ -21,6 +21,7 @@ import thunk from 'redux-thunk';
 window.webappStart = () => {
   const initialState = window.__PRELOADED_STATE__;
   const store = createStore(rootReducer, initialState,applyMiddleware(thunk));
+
   render(
     <Provider store={store}>
       <Router history={browserHistory}>{routes}</Router>

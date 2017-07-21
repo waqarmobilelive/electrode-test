@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { toggleCheck, incNumber, decNumber } from "../actions";
 import custom from "../styles/custom.css";
 import {ProductListItem} from "./productListItem";
+
 import {fetchProducts} from "../actions/index";
 
 
@@ -57,3 +58,4 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductList);
+

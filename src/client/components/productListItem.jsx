@@ -1,4 +1,5 @@
 import React from "react";
+
 import {browserHistory} from 'react-router';
 
 export class ProductListItem extends React.Component {
@@ -12,3 +13,4 @@ export class ProductListItem extends React.Component {
   	<a onClick={() => this.handleOnClick(this.props.id)}>{this.props.title}</a>
   )}
 }
+
