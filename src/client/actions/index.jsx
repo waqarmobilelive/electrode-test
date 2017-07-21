@@ -1,4 +1,3 @@
-import productsApi from "../api/productsApi";
 
 export function fetchProducts (){
   return (dispatch) => {

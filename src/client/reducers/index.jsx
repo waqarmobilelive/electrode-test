@@ -1,5 +1,4 @@
 import {combineReducers} from "redux";
-import productsAPI from "../api/productsApi";
 
 const list = (store, action) => {
   if (action.type === "FETCH_PRODUCTS_LOADING") {

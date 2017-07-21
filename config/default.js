@@ -24,17 +24,7 @@ module.exports = {
       "options": {
         "pageTitle": "electrode-assignment",
         "paths": {
-          "/": {
-            "content": {
-              "module": "./{{env.APP_SRC_DIR}}/server/views/index-view"
-            }
-          },
-          "/products": {
-            "content": {
-              "module": "./{{env.APP_SRC_DIR}}/server/views/index-view"
-            }
-          },
-          "/product/:id": {
+          "*": {
             "content": {
               "module": "./{{env.APP_SRC_DIR}}/server/views/index-view"
             }
